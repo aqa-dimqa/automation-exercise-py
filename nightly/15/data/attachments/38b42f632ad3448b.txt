@@ -1,0 +1,52 @@
+INFO:root:Open [Login Page]: /login
+INFO:root:Pre sign up
+INFO:root:Fill pre sign up data
+INFO:root:Get test video from Selenoid by video id = [test_should_sign_up_with_valid_data['company' length = max - 1]]
+INFO:root:Send request [GET]: /video/test_should_sign_up_with_valid_data['company' length = max - 1].mp4
+INFO:httpx:HTTP Request: GET http://selenoid:4444/video/test_should_sign_up_with_valid_data['company'%20length%20=%20max%20-%201].mp4 "HTTP/1.1 404 Not Found"
+INFO:root:Request
+
+Method: GET
+Endpoint: http://selenoid:4444/video/test_should_sign_up_with_valid_data['company'%20length%20=%20max%20-%201].mp4
+Headers: {'host': 'selenoid:4444', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/json', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO:root:Response
+
+Status code: 404
+Endpoint: http://selenoid:4444/video/test_should_sign_up_with_valid_data['company'%20length%20=%20max%20-%201].mp4
+Headers: {'content-type': 'text/plain; charset=utf-8', 'x-content-type-options': 'nosniff', 'date': 'Mon, 20 Apr 2026 06:44:44 GMT', 'content-length': '19'}
+
+INFO:root:Send request [GET]: /video/test_should_sign_up_with_valid_data['company' length = max - 1].mp4
+INFO:httpx:HTTP Request: GET http://selenoid:4444/video/test_should_sign_up_with_valid_data['company'%20length%20=%20max%20-%201].mp4 "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: http://selenoid:4444/video/test_should_sign_up_with_valid_data['company'%20length%20=%20max%20-%201].mp4
+Headers: {'host': 'selenoid:4444', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/json', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: http://selenoid:4444/video/test_should_sign_up_with_valid_data['company'%20length%20=%20max%20-%201].mp4
+Headers: {'accept-ranges': 'bytes', 'content-length': '115056', 'content-type': 'video/mp4', 'last-modified': 'Mon, 20 Apr 2026 06:44:45 GMT', 'date': 'Mon, 20 Apr 2026 06:44:48 GMT'}
+
+INFO:root:Remove current test users from backend
+INFO:root:Delete user with email: michael98@test.arrnel.com
+INFO:root:Send request [DELETE]: /deleteAccount
+INFO:httpx:HTTP Request: DELETE https://automationexercise.com/api/deleteAccount "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: DELETE
+Endpoint: https://automationexercise.com/api/deleteAccount
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'content-length': '48'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/deleteAccount
+Headers: {'date': 'Mon, 20 Apr 2026 06:44:50 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'DELETE, OPTIONS', 'x-powered-by': 'Phusion Passenger(R) 6.1.2', 'status': '200 OK', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=nZxLWFk5iC43Sy236JzCXo86YsZ01EIvU3RQx8f36YPSxbl%2FPiuS85PqAl%2Fb6AjYLgokvy2cuetujE%2BKCZ9QjG0%2F2zRIggeW8IssZczJiEhrzHcmvTVcVNUI5gLW7Xh4MM5uzB5qlXKe"}]}', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'content-encoding': 'gzip', 'cf-ray': '9ef22ebe1dd2f83f-ORD', 'alt-svc': 'h3=":443"; ma=86400'}
+
+WARNING:root:Failed to remove user(s):
+Email = ashleegriffin.39@test.arrnel.gov, password = [12345], test_data_password = [12345]
+Email = noblekaren.1@test.arrnel.gov, password = [12345], test_data_password = [12345]
+Email = michael98@test.arrnel.com, password = [12345], test_data_password = [12345]

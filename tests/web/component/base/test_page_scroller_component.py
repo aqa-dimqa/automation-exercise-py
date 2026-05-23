@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from src.config.config import CFG
 from tests.web.base_web_component_test import BaseWebComponentTest
 
 
@@ -10,7 +11,7 @@ from tests.web.base_web_component_test import BaseWebComponentTest
 class TestPageScrollerComponent(BaseWebComponentTest):
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Page scroller")
     @allure.title("[WEB Component] Page scroller scroll page to top")
     def test_should_scroll_on_top_page(self):

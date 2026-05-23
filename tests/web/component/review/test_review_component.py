@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from src.config.config import CFG
 from src.model.review import ReviewInfo
 from src.util.decorator.disabled_by_issue import disabled_by_issue
 from tests.data_provider.review_data_provider import ReviewDataProviderUI
@@ -14,7 +15,7 @@ class TestReviewComponent(BaseWebComponentTest):
 
     @pytest.mark.usefixtures("open_product_page")
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Review Component")
     @allure.title("[WEB] Should have expected screenshot when not send review")
     def test_should_have_expected_screenshot_when_not_send_review(self):
@@ -25,7 +26,7 @@ class TestReviewComponent(BaseWebComponentTest):
 
     @pytest.mark.usefixtures("open_expected_product_page")
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Review Component")
     @allure.title("[WEB] Should have expected screenshot when send review")
     def test_should_have_expected_screenshot_when_send_review(self):
@@ -44,7 +45,7 @@ class TestReviewComponent(BaseWebComponentTest):
         )
 
     @pytest.mark.usefixtures("open_expected_product_page")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Review Component")
     @pytest.mark.parametrize(
         "case_title, review",
@@ -64,7 +65,7 @@ class TestReviewComponent(BaseWebComponentTest):
 
     @disabled_by_issue(issue_id=3, reason="[WEB] Not validate sensitive data")
     @pytest.mark.usefixtures("open_expected_product_page")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Review Component")
     @pytest.mark.parametrize(
         "case_title, review, error_message",

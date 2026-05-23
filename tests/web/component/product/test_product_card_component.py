@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from src.config.config import CFG
 from src.util.test.data_generator import DataGenerator
 from tests.web.base_web_component_test import BaseWebComponentTest
 
@@ -12,7 +13,7 @@ from tests.web.base_web_component_test import BaseWebComponentTest
 class TestProductCard(BaseWebComponentTest):
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Product Card Component")
     @allure.title("[WEB Component] Product card should have expected data")
     def test_product_card_has_expected_data(self):
@@ -37,7 +38,7 @@ class TestProductCard(BaseWebComponentTest):
         except AssertionError:
             pytest.xfail("TASK-1234")
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Product Card Component")
     @allure.title(
         "[WEB Component] Should add product to cart when click on add to cart button"

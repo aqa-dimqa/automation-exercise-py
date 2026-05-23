@@ -159,6 +159,10 @@ class Settings(BaseSettings):
     session_id_cookie_title: str = Field(default="sessionid")
 
     # TEST_DATA
+    owner: str = Field(
+        validation_alias=AliasChoices("GH_OWNER"),
+        default="OWNER"
+    )
     default_email: str = Field(validation_alias=AliasChoices("DEFAULT_EMAIL"))
     default_password: str = Field(
         validation_alias=AliasChoices("DEFAULT_PASSWORD"),
@@ -224,11 +228,10 @@ class Settings(BaseSettings):
         default="https://api.github.com",
     )
     github_account_name: str = Field(
-        validation_alias=AliasChoices("GH_ACCOUNT_NAME"),
-        default="arrnel",
+        validation_alias=AliasChoices("GH_OWNER")
     )
     github_repo_name: str = Field(
-        validation_alias=AliasChoices("GH_REPO_NAME"),
+        validation_alias=AliasChoices("GH_REPO"),
         default="automation-exercise-py",
     )
     github_token: str = Field(validation_alias=AliasChoices("GH_TOKEN"))

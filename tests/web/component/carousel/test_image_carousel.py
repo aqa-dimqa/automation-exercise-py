@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from src.config.config import CFG
 from tests.web.base_web_component_test import BaseWebComponentTest
 
 
@@ -12,7 +13,7 @@ from tests.web.base_web_component_test import BaseWebComponentTest
 class TestImageCarousel(BaseWebComponentTest):
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Image Carousel")
     @allure.title(
         "[WEB Component] Image Carousel should show previous image when scroll left"
@@ -32,7 +33,7 @@ class TestImageCarousel(BaseWebComponentTest):
         )
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.title(
         "[WEB Component] Image Carousel should show next image when scroll right"
     )
@@ -51,7 +52,7 @@ class TestImageCarousel(BaseWebComponentTest):
         )
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.title(
         "[WEB Component] Image Carousel should show last image when scroll left on first image"
     )
@@ -70,7 +71,7 @@ class TestImageCarousel(BaseWebComponentTest):
         )
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.title(
         "[WEB Component] Image Carousel should show first image when scroll right on last image"
     )

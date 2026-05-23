@@ -3,6 +3,7 @@ from http import HTTPStatus
 import allure
 import pytest
 
+from src.config.config import CFG
 from src.client.core.condition.conditions import Conditions
 from src.util.api.json_path_util import JsonPath
 from src.util.test.data_generator import DataGenerator
@@ -13,7 +14,7 @@ from tests.api.base_api_test import BaseApiTest
 @allure.feature("Product")
 class TestProductApi(BaseApiTest):
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("Get all products")
     @allure.story(
         "[API] Get products should return 200_OK and contains expected product title"
@@ -36,7 +37,7 @@ class TestProductApi(BaseApiTest):
             ),
         )
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("Filter products by valid query")
     @allure.title(
         "[API] Get products should return 200_OK and contains expected product title"

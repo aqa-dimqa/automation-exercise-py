@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from src.config.config import CFG
 from src.util.test.data_generator import DataGenerator
 from tests.web.base_web_component_test import BaseWebComponentTest
 
@@ -13,7 +14,7 @@ from tests.web.base_web_component_test import BaseWebComponentTest
 class TestProductCarousel(BaseWebComponentTest):
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Products Carousel")
     @allure.title(
         "[WEB Component] Products Carousel should show previous image when scroll left"
@@ -32,7 +33,7 @@ class TestProductCarousel(BaseWebComponentTest):
         )
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.title(
         "[WEB Component] Products Carousel should show next products when scroll right"
     )
@@ -50,7 +51,7 @@ class TestProductCarousel(BaseWebComponentTest):
         )
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.title(
         "[WEB Component] Products Carousel should last products when scroll left on first slide"
     )
@@ -68,7 +69,7 @@ class TestProductCarousel(BaseWebComponentTest):
         )
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.title(
         "[WEB Component] Products Carousel should first products when scroll right on last image"
     )
@@ -86,7 +87,7 @@ class TestProductCarousel(BaseWebComponentTest):
         )
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Products Carousel")
     @allure.title("[WEB Component] Add product to cart from product carousel")
     def test_add_product_to_cart(self):
@@ -101,7 +102,7 @@ class TestProductCarousel(BaseWebComponentTest):
         # Assertions
         self.cart_page.products.check_contains_product_titles(product_title)
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Products Carousel")
     @allure.title("[WEB Component] Product carousel should have expected product")
     def test_should_contains_expected_product(self):

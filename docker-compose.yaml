@@ -84,8 +84,8 @@ services:
       - GH_API_URL=${GH_API_URL:-}
       - GH_TOKEN=${GH_TOKEN:-}
       - GH_TOKEN_NAME=${GH_TOKEN_NAME:-}
-      - GH_ACCOUNT_NAME=${GH_ACCOUNT_NAME:-}
-      - GH_REPO_NAME=${GH_REPO_NAME:-}
+      - GH_OWNER=${GH_OWNER:-}
+      - GH_REPO=${GH_REPO:-}
     volumes:
       - ./allure-results:/allure-results
       - ./resources/files:/automation-exercise-py/resources/files

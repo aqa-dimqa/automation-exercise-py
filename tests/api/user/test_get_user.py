@@ -4,6 +4,7 @@ import allure
 import pytest
 
 from src.client.core.condition.conditions import Conditions
+from src.config.config import CFG
 from src.util.test.data_generator import DataGenerator
 from tests.api.base_api_test import BaseApiTest
 
@@ -14,7 +15,7 @@ ACCOUNT_NOT_FOUND_MESSAGE = "Account not found with this email, try another emai
 @allure.feature("User")
 class TestGetUserApi(BaseApiTest):
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("Get user when user exists")
     @allure.title(
         "[API] Get user should return 200_OK when send get user request and user exists"
@@ -34,7 +35,7 @@ class TestGetUserApi(BaseApiTest):
             Conditions.body_field_not_equals("user.id", None, 0),
         )
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("Get user when user not exists")
     @allure.title(
         "[API] Get user should return 404_NOT_FOUND when send get user request and user not exists"

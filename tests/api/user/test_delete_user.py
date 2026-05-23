@@ -4,6 +4,7 @@ import allure
 import pytest
 
 from src.client.core.condition.conditions import Conditions
+from src.config.config import CFG
 from src.util.test.data_generator import DataGenerator
 from tests.api.base_api_test import BaseApiTest
 
@@ -15,7 +16,7 @@ SUCCESSFUL_DELETE_MESSAGE = "Account deleted!"
 @allure.feature("User")
 class TestDeleteUserApi(BaseApiTest):
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("Delete user if user exists")
     @allure.title(
         "[API] Delete user should return 200_OK "
@@ -36,7 +37,7 @@ class TestDeleteUserApi(BaseApiTest):
             Conditions.body_field_equals("message", SUCCESSFUL_DELETE_MESSAGE),
         )
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("Delete user if user not exists")
     @allure.title(
         "[API] Delete user should return 404_NOT_FOUND "

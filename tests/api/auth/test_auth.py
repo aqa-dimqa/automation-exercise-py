@@ -14,7 +14,7 @@ from tests.api.base_api_test import BaseApiTest
 @allure.feature("Auth")
 class TestAuthApi(BaseApiTest):
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("Get csrf")
     @allure.title(
         "[API] Get csrf should return 200_OK "
@@ -28,7 +28,7 @@ class TestAuthApi(BaseApiTest):
             Conditions.cookies_exists(CFG.csrf_cookie_title),
         )
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("Login with valid data")
     @allure.title(
         "[API] Login should return 200_OK "

@@ -4,6 +4,7 @@ import allure
 import pytest
 
 from src.client.core.condition.conditions import Conditions
+from src.config.config import CFG
 from src.mapper.user_mapper import UserMapper
 from src.model.user import User
 from src.util.decorator.disabled_by_issue import disabled_by_issue
@@ -19,7 +20,7 @@ SUCCESSFUL_UPDATE_MESSAGE = "User updated!"
 @allure.feature("User")
 class TestUpdateUserApi(BaseApiTest):
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("Update user with valid data")
     @allure.title(
         "[API] Update user should return 200_OK "
@@ -57,7 +58,7 @@ class TestUpdateUserApi(BaseApiTest):
         )
 
     @disabled_by_issue(issue_id=1, reason="[WEB] Not validate sensitive data")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("Update user with invalid data")
     @allure.title(
         "[API] Update user should return 400_BAD_REQUEST "
@@ -95,7 +96,7 @@ class TestUpdateUserApi(BaseApiTest):
             Conditions.body_field_equals("message", expected_message),
         )
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("Update user if user not exists")
     @allure.title(
         "[API] Update user should return 404_BAD_REQUEST "

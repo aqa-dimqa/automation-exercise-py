@@ -4,6 +4,7 @@ import allure
 import pytest
 
 from src.client.core.condition.conditions import Conditions
+from src.config.config import CFG
 from src.model.user import User
 from src.util.test.data_generator import DataGenerator
 from tests.api.base_api_test import BaseApiTest
@@ -16,7 +17,7 @@ USER_NOT_FOUND = "User not found!"
 @allure.feature("Verify Login")
 class TestVerifyLoginApi(BaseApiTest):
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("Verify login with valid data")
     @allure.title("Should return user exists when user exists with email and password")
     def test_verify_login_with_credentials(self, create_user: User):
@@ -34,7 +35,7 @@ class TestVerifyLoginApi(BaseApiTest):
             Conditions.body_field_equals("message", USER_EXISTS_MESSAGE),
         )
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("Verify login with invalid data")
     @allure.title("Should return user not found when user password invalid")
     def test_verify_login_with_invalid_password(self, create_user: User):

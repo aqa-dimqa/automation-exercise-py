@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from src.config.config import CFG
 from src.util.test.data_generator import DataGenerator
 from tests.web.base_web_component_test import BaseWebComponentTest
 
@@ -13,7 +14,7 @@ from tests.web.base_web_component_test import BaseWebComponentTest
 class TestAnimatedProductCard(BaseWebComponentTest):
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Animated Product Card Component")
     @allure.title("[WEB Component] Animated product card should have expected data")
     def test_product_card_has_expected_data(self):
@@ -31,7 +32,7 @@ class TestAnimatedProductCard(BaseWebComponentTest):
         )
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Animated Product Card Component")
     @allure.title(
         "[WEB Component] Animated product card overlay should have expected data"
@@ -52,7 +53,7 @@ class TestAnimatedProductCard(BaseWebComponentTest):
             timeout=1,
         )
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Animated Product Card Component")
     @allure.title(
         "[WEB Component] Should add product to cart when click on add to cart button"
@@ -67,7 +68,7 @@ class TestAnimatedProductCard(BaseWebComponentTest):
         # Assertions
         self.main_page.notification.check_notification_has_success_added_product_message()
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Animated Product Card Component")
     @allure.title(
         "[WEB Component] Should add product to cart when click on add to cart button from overlay"
@@ -84,7 +85,7 @@ class TestAnimatedProductCard(BaseWebComponentTest):
         # Assertions
         self.main_page.notification.check_notification_has_success_added_product_message()
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Animated Product Card Component")
     @allure.title(
         "[WEB Component] Should open product page when click on view product button"

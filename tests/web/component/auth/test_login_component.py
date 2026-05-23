@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from src.config.config import CFG
 from src.util.test.data_generator import DataGenerator
 from tests.web.base_web_component_test import BaseWebComponentTest
 
@@ -12,7 +13,7 @@ from tests.web.base_web_component_test import BaseWebComponentTest
 class TestLoginWeb(BaseWebComponentTest):
 
     @pytest.mark.usefixtures("open_login_page")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("Sign in with valid credentials")
     @allure.title("[WEB] Sign in with valid data")
     def test_should_sign_in_with_valid_credentials(self, create_user):
@@ -27,7 +28,7 @@ class TestLoginWeb(BaseWebComponentTest):
         self.login_page.header.check_user_is_logged_in_as(user.name)
 
     @pytest.mark.usefixtures("open_login_page")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("Sign in with invalid credentials")
     @allure.title("[WEB] Sign in with invalid credentials. Case: {case_title}")
     def test_should_not_sign_in_with_invalid_credentials(self, create_user):

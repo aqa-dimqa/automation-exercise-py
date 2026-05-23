@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from src.config.config import CFG
 from src.util.store.user_store import ThreadSafeUserStore
 from src.util.test.data_generator import DataGenerator
 from tests.web.base_e2e_test import BaseE2ETest
@@ -11,7 +12,7 @@ from tests.web.base_e2e_test import BaseE2ETest
 class TestPlaceOrder(BaseE2ETest):
 
     @pytest.mark.usefixtures("open_login_page")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.title("Purchase products with sign up before checkout")
     def test_place_order_with_sign_up_before_checkout(self):
         # Data
@@ -44,7 +45,7 @@ class TestPlaceOrder(BaseE2ETest):
         self.order_placed_page.check_page_is_visible()
 
     @pytest.mark.usefixtures("open_products_page")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.title("Purchase products with sign up while checkout")
     def test_place_order_with_sign_up_while_checkout(self):
         # Data
@@ -80,7 +81,7 @@ class TestPlaceOrder(BaseE2ETest):
         self.order_placed_page.check_page_is_visible()
 
     @pytest.mark.usefixtures("create_user", "open_login_page")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.title("Purchase products with login before checkout")
     def test_place_order_with_login_before_checkout(self, create_user):
         # Data
@@ -111,7 +112,7 @@ class TestPlaceOrder(BaseE2ETest):
         self.order_placed_page.check_page_is_visible()
 
     @pytest.mark.usefixtures("create_user", "open_products_page")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.title("Purchase products with login while checkout")
     def test_place_order_with_login_while_checkout(self, create_user):
         # Data

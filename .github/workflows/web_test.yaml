@@ -53,8 +53,8 @@ jobs:
       # ---------- GITHUB
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
       GH_TOKEN_NAME: ${{ vars.GH_TOKEN_NAME }}
-      GH_ACCOUNT_NAME: ${{ github.repository_owner }}
-      GH_REPO_NAME: ${{ vars.GH_REPO_NAME }}
+      GH_OWNER: ${{ github.repository_owner }}
+      GH_REPO: ${{ vars.GH_REPO }}
       # ---------- EXPECTED DATA
       DEFAULT_EMAIL: ${{ secrets.DEFAULT_EMAIL }}
       DEFAULT_PASSWORD: ${{ secrets.DEFAULT_PASSWORD }}

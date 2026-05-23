@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from src.config.config import CFG
 from src.model.card import CardInfo
 from src.util.decorator.disabled_by_issue import disabled_by_issue
 from tests.data_provider.card_data_provider import CardDataProviderUI
@@ -17,7 +18,7 @@ class TestPaymentComponent(BaseWebComponentTest):
         "open_payment_page", "auth_user", "add_random_products_to_cart"
     )
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Payment Component")
     @allure.title("[WEB Component] Payment component should have expected screenshot")
     def test_payment_card_component_has_expected_screenshot(self):
@@ -29,7 +30,7 @@ class TestPaymentComponent(BaseWebComponentTest):
     @pytest.mark.usefixtures(
         "open_payment_page", "auth_user", "add_random_products_to_cart"
     )
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Payment Component")
     @allure.title(
         "[WEB Component] Pay with valid card should show success status message. Case: {case_title}"
@@ -47,7 +48,7 @@ class TestPaymentComponent(BaseWebComponentTest):
     @pytest.mark.usefixtures(
         "open_payment_page", "auth_user", "add_random_products_to_cart"
     )
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Payment Component")
     @allure.title(
         "[WEB Component] Pay with invalid card should show error message. Case: {case_title}"

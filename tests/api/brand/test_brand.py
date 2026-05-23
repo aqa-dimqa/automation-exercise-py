@@ -4,6 +4,7 @@ import allure
 import pytest
 
 from src.client.core.condition.conditions import Conditions
+from src.config.config import CFG
 from src.util.api.json_path_util import JsonPath
 from src.util.test.data_generator import DataGenerator
 from tests.api.base_api_test import BaseApiTest
@@ -13,7 +14,7 @@ from tests.api.base_api_test import BaseApiTest
 @allure.feature("Brand")
 class TestBrandApi(BaseApiTest):
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("Get brands")
     @allure.title("Get brands should return 200_OK when send get brands request")
     def test_get_all_brands(self):

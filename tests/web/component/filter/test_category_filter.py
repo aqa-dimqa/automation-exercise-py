@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from src.config.config import CFG
 from src.model.enum.user_type import UserType
 from src.util.test.data_generator import DataGenerator
 from tests.web.base_web_component_test import BaseWebComponentTest
@@ -17,7 +18,7 @@ PERCENT_OF_TOLERANCE = 0.002
 class TestCategoryFilter(BaseWebComponentTest):
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Category Filter")
     @allure.title(
         "[WEB Component] Category filter should have expected screenshot when collapsed"
@@ -34,7 +35,7 @@ class TestCategoryFilter(BaseWebComponentTest):
         )
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Category Filter")
     @allure.title(
         "[WEB Component] Category filter should have expected screenshot when group expanded"
@@ -58,7 +59,7 @@ class TestCategoryFilter(BaseWebComponentTest):
         )
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Category Filter")
     @allure.title(
         "[WEB Component] Category filter group should be collapsed after collapse expanded group"
@@ -83,7 +84,7 @@ class TestCategoryFilter(BaseWebComponentTest):
         )
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Category Filter")
     @allure.title(
         "[WEB Component] Category filter group should be collapsed after expand another group"
@@ -108,7 +109,7 @@ class TestCategoryFilter(BaseWebComponentTest):
             timeout=0.5,
         )
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Category Filter")
     @allure.title(
         "[WEB Component] Category filter should have expected screenshot when fully expanded"

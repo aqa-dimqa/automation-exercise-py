@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from src.config.config import CFG
 from tests.web.base_web_component_test import BaseWebComponentTest
 
 
@@ -16,7 +17,7 @@ class TestAddressComponent(BaseWebComponentTest):
         "open_checkout_page",
     )
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Billing Address Component")
     @allure.title("[WEB Component] Billing address has expected data")
     def test_billing_address_has_expected_data(self):
@@ -31,7 +32,7 @@ class TestAddressComponent(BaseWebComponentTest):
         "open_checkout_page",
     )
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Delivery Address Component")
     @allure.title("[WEB Component] Delivery address has expected data")
     def test_delivery_address_has_expected_data(self):

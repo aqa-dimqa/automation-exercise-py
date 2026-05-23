@@ -84,8 +84,8 @@ jobs:
       API_LOG_LVL: ${{ vars.API_LOG_LVL }}
       GH_API_URL: ${{ github.api_url }}
       GH_TOKEN_NAME: ${{ vars.GH_TOKEN_NAME }}
-      GH_ACCOUNT_NAME: ${{ github.repository_owner }}
-      GH_REPO_NAME: ${{ vars.GH_REPO_NAME }}
+      GH_OWNER: ${{ github.repository_owner }}
+      GH_REPO: ${{ vars.GH_REPO }}
       BUILD_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
       # ---------- IMPORTANT VARS
       ENV: ci

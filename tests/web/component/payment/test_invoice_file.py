@@ -18,7 +18,7 @@ class TestPaymentComponent(BaseWebComponentTest):
         "add_random_products_to_cart",
     )
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Payment Component")
     @allure.title("[WEB Component] Order placed page should have expected screenshot")
     def test_order_placed_page_should_have_expected_data(self):
@@ -35,7 +35,7 @@ class TestPaymentComponent(BaseWebComponentTest):
 
     @pytest.mark.download_file_test
     @pytest.mark.usefixtures("open_payment_page")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Payment Component")
     @allure.title("[WEB Component] Invoice should have expected price")
     def test_invoice_file_should_have_expected_price(
@@ -63,7 +63,7 @@ class TestPaymentComponent(BaseWebComponentTest):
 
     @pytest.mark.download_file_test
     @pytest.mark.usefixtures("open_payment_page")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Payment Component")
     @allure.title("[WEB Component] Can download invoice multiple times")
     def test_can_download_invoice_multiple_times(

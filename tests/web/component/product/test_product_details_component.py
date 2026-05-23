@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from src.config.config import CFG
 from src.util.test.data_generator import DataGenerator
 from tests.web.base_web_component_test import BaseWebComponentTest
 
@@ -12,7 +13,7 @@ from tests.web.base_web_component_test import BaseWebComponentTest
 class TestProductCard(BaseWebComponentTest):
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Product Details Component")
     @allure.title("[WEB Component] Product details should have expected data")
     def test_product_details_has_expected_screenshot(self):
@@ -29,7 +30,7 @@ class TestProductCard(BaseWebComponentTest):
             path_to_screenshot="files/screenshot/component/product_details/card.png",
         )
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Product Details Component")
     @allure.title(
         "[WEB Component] Should add product to cart when click on add to cart button multiple times"
@@ -51,7 +52,7 @@ class TestProductCard(BaseWebComponentTest):
         # Assertions
         self.main_page.notification.check_notification_has_success_added_product_message()
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Product Details Component")
     @allure.title(
         "[WEB Component] Should add product to cart when click on add to cart button"
@@ -70,7 +71,7 @@ class TestProductCard(BaseWebComponentTest):
         # Assertions
         self.main_page.notification.check_notification_has_success_added_product_message()
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Product Details Component")
     @allure.title(
         "[WEB Component] Should not add negative products count to cart when click on add to cart button"

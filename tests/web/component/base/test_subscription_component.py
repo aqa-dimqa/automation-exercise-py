@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from src.config.config import CFG
 from src.util.decorator.disabled_by_issue import disabled_by_issue
 from src.util.email_util import EmailUtil
 from src.util.test.data_generator import DataGenerator
@@ -15,7 +16,7 @@ _INVALID_EMAIL_TEXT = "Invalid email"
 class TestSubscriptionComponent(BaseWebComponentTest):
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Subscription component")
     @allure.title(
         "[WEB Component] Subscription component should have expected screenshot"
@@ -27,7 +28,7 @@ class TestSubscriptionComponent(BaseWebComponentTest):
         )
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Subscription component")
     @allure.title("[WEB Component] Should subscribe with valid email")
     def test_should_subscribe_with_valid_email(self):
@@ -42,7 +43,7 @@ class TestSubscriptionComponent(BaseWebComponentTest):
 
     @disabled_by_issue(issue_id=1, reason="[WEB] Not validate email address")
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Subscription component")
     @allure.title("[WEB Component] Should not subscribe with invalid email")
     def test_should_not_subscribe_with_invalid_email(self):
@@ -58,7 +59,7 @@ class TestSubscriptionComponent(BaseWebComponentTest):
         )
 
     @pytest.mark.usefixtures("open_contact_us_page")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Subscription component")
     @allure.title(
         "[WEB Component] Should have expected success status message after sending contact info"

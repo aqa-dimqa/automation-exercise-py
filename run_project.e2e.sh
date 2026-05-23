@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -euo pipefail
-source ./docker.properties
+
 # -------------------------
 # Configs
 # -------------------------
@@ -9,7 +9,7 @@ export TEST_IMAGE_NAME="automation-exercise-tests"
 export SELENOID_COMPOSE_FILE="docker-compose.yaml"
 export BROWSERS_JSON_FILE="./env/docker/selenoid/local/browsers.json"
 export BROWSER_CHANNEL="stable"
-export PREFIX=${IMAGE_PREFIX}
+export PREFIX="${GH_OWNER}"
 export ALLURE_DIR="./allure-results"
 export ARCH=$(uname -m)
 

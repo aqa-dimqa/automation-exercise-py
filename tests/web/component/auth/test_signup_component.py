@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from src.config.config import CFG
 from src.model.user import User
 from src.util.decorator.disabled_by_issue import disabled_by_issue
 from src.util.store.user_store import ThreadSafeUserStore
@@ -15,7 +16,7 @@ from tests.web.base_web_component_test import BaseWebComponentTest
 class TestSignUpWeb(BaseWebComponentTest):
 
     @pytest.mark.usefixtures("open_login_page")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("Sign up with valid credentials")
     @allure.title("[WEB] Sign up with valid data. Case: {case_title}")
     @pytest.mark.parametrize(
@@ -36,7 +37,7 @@ class TestSignUpWeb(BaseWebComponentTest):
 
     @disabled_by_issue(issue_id=1, reason="[WEB] Not validate sensitive data")
     @pytest.mark.usefixtures("open_login_page")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("Sign up with invalid credentials")
     @allure.title("[WEB] Sign up with invalid data. Case: {case_title}")
     @pytest.mark.parametrize(

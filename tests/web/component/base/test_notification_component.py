@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from src.config.config import CFG
 from tests.web.base_web_component_test import BaseWebComponentTest
 
 ADDED_PRODUCT_NOTIFICATION_TITLE = "Added!"
@@ -21,7 +22,7 @@ class TestNotificationComponent(BaseWebComponentTest):
     ##########################
     @pytest.mark.usefixtures("open_products_page")
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Add Product Notification")
     @allure.title(
         "[WEB Component] Add product notification should have expected data and screenshot"
@@ -45,7 +46,7 @@ class TestNotificationComponent(BaseWebComponentTest):
         )
 
     @pytest.mark.usefixtures("open_products_page")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Add Product Notification")
     @allure.title(
         "[WEB Component] Add product notification should be closed when click on close button"
@@ -66,7 +67,7 @@ class TestNotificationComponent(BaseWebComponentTest):
     ################################################
     @pytest.mark.usefixtures("open_products_page")
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Place Order Without Authorization Notification")
     @allure.title(
         "[WEB Component] Place order without authorization notification "
@@ -96,7 +97,7 @@ class TestNotificationComponent(BaseWebComponentTest):
         )
 
     @pytest.mark.usefixtures("open_products_page")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Place Order Without Authorization Notification")
     @allure.title(
         "[WEB Component] Place order without authorization notification proceed to checkout button "

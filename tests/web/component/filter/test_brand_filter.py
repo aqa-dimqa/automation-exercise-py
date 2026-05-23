@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from src.config.config import CFG
 from tests.web.base_web_component_test import BaseWebComponentTest
 
 
@@ -14,7 +15,7 @@ from tests.web.base_web_component_test import BaseWebComponentTest
 class TestBrandFilter(BaseWebComponentTest):
 
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Brand Filter")
     @allure.title("[WEB Component] Brand filter should have expected screenshot")
     def test_brand_filter_should_have_screenshot(self):
@@ -26,7 +27,7 @@ class TestBrandFilter(BaseWebComponentTest):
             path_to_screenshot="files/screenshot/component/filter/brand/brand_filter.png"
         )
 
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Brand Filter")
     @allure.title("[WEB Component] Brand filter should filters products by brand")
     def test_brand_filter_show_filtered_products_by_brand(self):

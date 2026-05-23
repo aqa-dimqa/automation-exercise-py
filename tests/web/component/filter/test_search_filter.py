@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from src.config.config import CFG
 from src.util.test.data_generator import DataGenerator
 from tests.web.base_web_component_test import BaseWebComponentTest
 
@@ -14,7 +15,7 @@ class TestSearchFilter(BaseWebComponentTest):
 
     @pytest.mark.usefixtures("open_products_page")
     @pytest.mark.screenshot_test
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Search Filter")
     @allure.title("[WEB Component] Search filter should have expected screenshot")
     def test_search_filter_should_have_screenshot(self):
@@ -25,7 +26,7 @@ class TestSearchFilter(BaseWebComponentTest):
         )
 
     @pytest.mark.usefixtures("open_products_page")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Search Filter")
     @allure.title("[WEB Component] Search filter should filter products by query")
     def test_search_filter_filter_products_by_query(self):
@@ -40,7 +41,7 @@ class TestSearchFilter(BaseWebComponentTest):
         self.products_page.products.check_has_products(*products)
 
     @pytest.mark.usefixtures("open_products_page")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Search Filter")
     @allure.title(
         "[WEB Component] Search filter should return all products when filter by empty query"
@@ -57,7 +58,7 @@ class TestSearchFilter(BaseWebComponentTest):
         self.products_page.products.check_contains_products(*products)
 
     @pytest.mark.usefixtures("open_products_page")
-    @allure.label("owner", "arrnel")
+    @allure.label("owner", CFG.owner)
     @allure.story("[Web] Component - Search Filter")
     @allure.title("[WEB Component] Search filter should return empty products catalog")
     def test_search_filter_returns_empty_catalog_when_(self):

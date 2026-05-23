@@ -1,0 +1,64 @@
+INFO     root:step_logger.py:73 Create user: cummingsrebecca.2@test.arrnel.org
+INFO     root:step_logger.py:35 Send request [POST]: /createAccount
+INFO     httpx:_client.py:1025 HTTP Request: POST https://automationexercise.com/api/createAccount "HTTP/1.1 200 OK"
+INFO     root:base_api_client.py:133 Request
+
+Method: POST
+Endpoint: https://automationexercise.com/api/createAccount
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'content-length': '337'}
+
+INFO     root:base_api_client.py:144 Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/createAccount
+Headers: {'date': 'Sat, 23 May 2026 19:22:29 GMT', 'content-type': 'text/html; charset=utf-8', 'content-length': '49', 'connection': 'keep-alive', 'vary': 'Accept,Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'POST, OPTIONS', 'x-powered-by': 'Phusion Passenger(R) 6.1.2', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=hL2IAN9pJ9vJ7WkIfBNto8xx0muAcbRt%2Fh0mvaDcdfGkmAPr8LrhtETQbrvmYSpy1T6DM0SlI%2FSLqZiKa%2FqwbiEr0tZdueJWTXy2tZl5z3TzYgf%2BkD%2FtLJWdXjBQTC0wwkap2u4mCG%2Fh"}]}', 'cf-ray': 'a0066e00afb0806e-DFW', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO     root:step_logger.py:35 Send request [GET]: /getUserDetailByEmail
+INFO     httpx:_client.py:1025 HTTP Request: GET https://automationexercise.com/api/getUserDetailByEmail?email=cummingsrebecca.2%40test.arrnel.org "HTTP/1.1 200 OK"
+INFO     root:base_api_client.py:133 Request
+
+Method: GET
+Endpoint: https://automationexercise.com/api/getUserDetailByEmail?email=cummingsrebecca.2%40test.arrnel.org
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO     root:base_api_client.py:144 Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/getUserDetailByEmail?email=cummingsrebecca.2%40test.arrnel.org
+Headers: {'date': 'Sat, 23 May 2026 19:22:30 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'DELETE, POST, PUT, GET, OPTIONS', 'x-powered-by': 'Phusion Passenger(R) 6.1.2', 'status': '200 OK', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=AcujQN4sZB8R6bBULSjaVkZB0Xt2ywcPq67Pb6cidPyEEQd4uaS922SjJ%2FNc5vykUt0yL7AVmLUilIJAjNSU6iBRte5guALoMNwOTCR%2FxQIf6hSOpHYKiW3hFhmEsMlZIT0sCq8KmTQw"}]}', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'content-encoding': 'gzip', 'cf-ray': 'a0066e01395f806e-DFW', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO     root:step_logger.py:73 Open [Products Page]: /products
+INFO     root:step_logger.py:73 Add product to cart: Printed Off Shoulder Top - White
+INFO     root:step_logger.py:73 Add product to cart: Fancy Green Top
+INFO     root:step_logger.py:73 Navigate to the [Cart] page by header
+INFO     root:step_logger.py:73 Click on [Cart]
+INFO     root:step_logger.py:73 Proceed to Checkout
+INFO     root:step_logger.py:35 Navigate by Notification link link: https://automationexercise.com/login
+INFO     root:step_logger.py:73 Sign in by email and password
+INFO     root:step_logger.py:73 Navigate to the [Cart] page by header
+INFO     root:step_logger.py:73 Click on [Cart]
+INFO     root:step_logger.py:73 Proceed to Checkout
+INFO     root:step_logger.py:73 Add order message: As phone measure could five commercial but. American thank present beyond expert exist.
+INFO     root:step_logger.py:73 Submit order
+INFO     root:step_logger.py:73 Pay by card
+INFO     root:step_logger.py:73 Fill card data
+INFO     root:step_logger.py:73 Check [Order Placed] is visible
+INFO     root:step_logger.py:35 Remove current test users from backend
+INFO     root:step_logger.py:73 Delete user with email: cummingsrebecca.2@test.arrnel.org
+INFO     root:step_logger.py:35 Send request [DELETE]: /deleteAccount
+INFO     httpx:_client.py:1025 HTTP Request: DELETE https://automationexercise.com/api/deleteAccount "HTTP/1.1 200 OK"
+INFO     root:base_api_client.py:133 Request
+
+Method: DELETE
+Endpoint: https://automationexercise.com/api/deleteAccount
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'content-length': '56'}
+
+INFO     root:base_api_client.py:144 Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/deleteAccount
+Headers: {'date': 'Sat, 23 May 2026 19:22:35 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Accept,Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'DELETE, OPTIONS', 'x-powered-by': 'Phusion Passenger(R) 6.1.2', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=pup4J2%2FhuoqqFsD%2BZN1cryWqhTny0EFnQO4x0GTeQp9nlCLt7nUwLS%2FaCV1igR47wo2I%2FxgXqIJVUNoig4aWSRDal61MjuR8ycrdI6R3wGHTjYdhAgOsoUknSnx%2FlOOYjujywnMouo%2Fv"}]}', 'content-encoding': 'gzip', 'cf-ray': 'a0066e223e262d47-DFW', 'alt-svc': 'h3=":443"; ma=86400'}
+
+WARNING  root:user_store.py:112 Failed to remove user(s):
+Email = whiterichard@test.arrnel.com, password = [12345], test_data_password = [12345]
+INFO     root:step_logger.py:35 Remove users from backend after all tests

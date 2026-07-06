@@ -1,0 +1,48 @@
+INFO:root:Get all products by group and category
+INFO:root:Send request [GET]: /productsList
+INFO:httpx:HTTP Request: GET https://automationexercise.com/api/productsList "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: https://automationexercise.com/api/productsList
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/productsList
+Headers: {'date': 'Mon, 06 Jul 2026 08:53:51 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'GET, PUT, POST, DELETE, OPTIONS', 'x-powered-by': 'Phusion Passenger(R) 6.1.2', 'status': '200 OK', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=n6J17YaUMmzIGoq6NTg1UO9LP0Oak5dhWYDUVFKVTRwrDenqG00fTxXkCNCBW5lBx1ktxgGym73RcGsCLgtsPIRA64XKxn6lH7sSkSdoziqcGntxH85J34Ozjio5AGjw18NVzbcFcNv6"}]}', 'content-encoding': 'gzip', 'cf-ray': 'a16d61a56e74d94a-ORD', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO:root:Open [Main Page]: /
+INFO:root:Filter in Category filter by group = [Kids] and category = [Dress]
+INFO:root:Expand Category filter group Kids
+INFO:root:Get test video from Selenoid by video id = [test_category_filter_filter_products_by_category_expand]
+INFO:root:Send request [GET]: /video/test_category_filter_filter_products_by_category_expand.mp4
+INFO:httpx:HTTP Request: GET http://selenoid:4444/video/test_category_filter_filter_products_by_category_expand.mp4 "HTTP/1.1 404 Not Found"
+INFO:root:Request
+
+Method: GET
+Endpoint: http://selenoid:4444/video/test_category_filter_filter_products_by_category_expand.mp4
+Headers: {'host': 'selenoid:4444', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/json', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO:root:Response
+
+Status code: 404
+Endpoint: http://selenoid:4444/video/test_category_filter_filter_products_by_category_expand.mp4
+Headers: {'content-type': 'text/plain; charset=utf-8', 'x-content-type-options': 'nosniff', 'date': 'Mon, 06 Jul 2026 08:54:04 GMT', 'content-length': '19'}
+
+INFO:root:Send request [GET]: /video/test_category_filter_filter_products_by_category_expand.mp4
+INFO:httpx:HTTP Request: GET http://selenoid:4444/video/test_category_filter_filter_products_by_category_expand.mp4 "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: http://selenoid:4444/video/test_category_filter_filter_products_by_category_expand.mp4
+Headers: {'host': 'selenoid:4444', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/json', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: http://selenoid:4444/video/test_category_filter_filter_products_by_category_expand.mp4
+Headers: {'accept-ranges': 'bytes', 'content-length': '192823', 'content-type': 'video/mp4', 'last-modified': 'Mon, 06 Jul 2026 08:54:04 GMT', 'date': 'Mon, 06 Jul 2026 08:54:08 GMT'}
+
+INFO:root:Remove current test users from backend

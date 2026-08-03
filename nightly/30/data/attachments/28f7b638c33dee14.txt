@@ -1,0 +1,93 @@
+INFO:root:Create user: rachelwilson@test.arrnel.io
+INFO:root:Send request [POST]: /createAccount
+INFO:httpx:HTTP Request: POST https://automationexercise.com/api/createAccount "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: POST
+Endpoint: https://automationexercise.com/api/createAccount
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'content-length': '323'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/createAccount
+Headers: {'date': 'Mon, 03 Aug 2026 08:19:56 GMT', 'content-type': 'text/html; charset=utf-8', 'content-length': '49', 'connection': 'keep-alive', 'vary': 'Accept,Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'POST, OPTIONS', 'x-powered-by': 'Phusion Passenger(R) 6.1.2', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=c9yTYwJERWTh18415miXOdPSaA4qjWoscw8uCIG0m%2B141GKKAncqPa9sCQLHsKa9S37af5AZN2SFCkGagw4HqGKYu2SH7yIHOvwmcTXLOsHs0s1a%2FUuCUi7ArUzhNKLurfsX8t8ZeD6o"}]}', 'cf-ray': 'a253e6738d4f3e81-IAD', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO:root:Send request [GET]: /getUserDetailByEmail
+INFO:httpx:HTTP Request: GET https://automationexercise.com/api/getUserDetailByEmail?email=rachelwilson%40test.arrnel.io "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: https://automationexercise.com/api/getUserDetailByEmail?email=rachelwilson%40test.arrnel.io
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/getUserDetailByEmail?email=rachelwilson%40test.arrnel.io
+Headers: {'date': 'Mon, 03 Aug 2026 08:19:56 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'POST, DELETE, PUT, GET, OPTIONS', 'x-powered-by': 'Phusion Passenger(R) 6.1.2', 'status': '200 OK', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2Fy10Lvttb8TGU%2FDw%2BMd0CiKNc%2F3riLw%2FBapIUCdLvE%2Bhz00rcw5%2BZ5gY2dcgq74D%2BJSxNKj4d0lwucWj1GuE5AvKUu0DXaiSWvKvEU7gCE6Q5avnjACNNdHwC%2FRpV6JWwgEAZcay0YwW"}]}', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'content-encoding': 'gzip', 'cf-ray': 'a253e674bf893e81-IAD', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO:root:Open [Products Page]: /products
+INFO:root:Add product to cart: Blue Top
+INFO:root:Add product to cart: Sleeves Top and Short - Blue & Pink
+INFO:root:Navigate to the [Cart] page by header
+INFO:root:Click on [Cart]
+INFO:root:Proceed to Checkout
+INFO:root:Navigate by Notification link link: https://automationexercise.com/login
+INFO:root:Sign in by email and password
+INFO:root:Navigate to the [Cart] page by header
+INFO:root:Click on [Cart]
+INFO:root:Proceed to Checkout
+INFO:root:Add order message: Southern wide career total music knowledge.
+INFO:root:Submit order
+INFO:root:Pay by card
+INFO:root:Fill card data
+INFO:root:Get test video from Selenoid by video id = [test_place_order_with_login_while_checkout]
+INFO:root:Send request [GET]: /video/test_place_order_with_login_while_checkout.mp4
+INFO:httpx:HTTP Request: GET http://selenoid:4444/video/test_place_order_with_login_while_checkout.mp4 "HTTP/1.1 404 Not Found"
+INFO:root:Request
+
+Method: GET
+Endpoint: http://selenoid:4444/video/test_place_order_with_login_while_checkout.mp4
+Headers: {'host': 'selenoid:4444', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/json', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO:root:Response
+
+Status code: 404
+Endpoint: http://selenoid:4444/video/test_place_order_with_login_while_checkout.mp4
+Headers: {'content-type': 'text/plain; charset=utf-8', 'x-content-type-options': 'nosniff', 'date': 'Mon, 03 Aug 2026 08:20:04 GMT', 'content-length': '19'}
+
+INFO:root:Send request [GET]: /video/test_place_order_with_login_while_checkout.mp4
+INFO:httpx:HTTP Request: GET http://selenoid:4444/video/test_place_order_with_login_while_checkout.mp4 "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: http://selenoid:4444/video/test_place_order_with_login_while_checkout.mp4
+Headers: {'host': 'selenoid:4444', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/json', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: http://selenoid:4444/video/test_place_order_with_login_while_checkout.mp4
+Headers: {'accept-ranges': 'bytes', 'content-length': '489469', 'content-type': 'video/mp4', 'last-modified': 'Mon, 03 Aug 2026 08:20:04 GMT', 'date': 'Mon, 03 Aug 2026 08:20:08 GMT'}
+
+INFO:root:Remove current test users from backend
+INFO:root:Delete user with email: rachelwilson@test.arrnel.io
+INFO:root:Send request [DELETE]: /deleteAccount
+INFO:httpx:HTTP Request: DELETE https://automationexercise.com/api/deleteAccount "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: DELETE
+Endpoint: https://automationexercise.com/api/deleteAccount
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'content-length': '50'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/deleteAccount
+Headers: {'date': 'Mon, 03 Aug 2026 08:20:08 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Accept,Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'DELETE, OPTIONS', 'x-powered-by': 'Phusion Passenger(R) 6.1.2', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=vOQU%2FCcgD8EbZlUFoEgApSMFbmAsgaxg%2F4cYRq8gWSjR%2FP2jVejqEXgl%2B2qfKIXXFDV2YrGfNxR3nB5zockr1KjlnnesHZvN7BNuu8iAskqbZEirrMN%2FQkG9%2BgeZbkM%2FakV5p8lUpsGX"}]}', 'content-encoding': 'gzip', 'cf-ray': 'a253e6bf0f07b87a-IAD', 'alt-svc': 'h3=":443"; ma=86400'}
+
+WARNING:root:Failed to remove user(s):
+Email = andrew16@test.arrnel.me, password = [12345], test_data_password = [12345]
+Email = bcook.843@test.arrnel.gov, password = [12345], test_data_password = [12345]
+INFO:root:Remove users from backend after all tests

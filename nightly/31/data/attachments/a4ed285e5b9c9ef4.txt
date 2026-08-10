@@ -1,0 +1,19 @@
+INFO     root:step_logger.py:73 Open [Products Page]: /products
+INFO     root:step_logger.py:73 Get all products
+INFO     root:step_logger.py:35 Send request [GET]: /productsList
+INFO     httpx:_client.py:1025 HTTP Request: GET https://automationexercise.com/api/productsList "HTTP/1.1 200 OK"
+INFO     root:base_api_client.py:133 Request
+
+Method: GET
+Endpoint: https://automationexercise.com/api/productsList
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO     root:base_api_client.py:144 Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/productsList
+Headers: {'date': 'Mon, 10 Aug 2026 06:03:40 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'OPTIONS, DELETE, POST, GET, PUT', 'x-powered-by': 'Phusion Passenger(R) 6.1.2', 'status': '200 OK', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=MnG%2FSAQT%2FMFiyY3DWvi8BulCVQgstDYmhoiluSClOtNs1rn%2B2w6bfZLNs3E1UGHBEercxOMUKYXXTK3J%2FNuxVskkplYfCRAckYeBcKkcWQPV50j%2FCaImC9aJQFXWorttHPVAFzhZeUAy"}]}', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'content-encoding': 'gzip', 'cf-ray': 'a28ccc791c73b268-IAD', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO     root:step_logger.py:73 Search in [Search filter] by query: 
+INFO     root:step_logger.py:35 Check All Products contains products: {'Grunt Blue Slim Fit Jeans', 'Sleeves Printed Top - White', 'Full Sleeves Top Cherry - Pink', 'Long Maxi Tulle Fancy Dress Up Outfits -Pink', 'Soft Stretch Jeans', 'Fancy Green Top', 'Stylish Dress', 'Rose Pink Embroidered Maxi Dress', 'Cotton Silk Hand Block Print Saree', 'Cotton Mull Embroidered Dress', 'Winter Top', 'Half Sleeves Top Schiffli Detailing - Pink', 'Blue Cotton Indie Mickey Dress', 'Premium Polo T-Shirts', 'Little Girls Mr. Panda Shirt', 'Regular Fit Straight Jeans', 'Green Side Placket Detail T-Shirt', 'Summer White Top', 'Colour Blocked Shirt – Sky Blue', 'Beautiful Peacock Blue Cotton Linen Saree', 'Blue Top', 'Sleeves Top and Short - Blue & Pink', 'Lace Top For Women', 'Pure Cotton Neon Green Tshirt', 'Men Tshirt', 'Sleeveless Dress', 'Sleeveless Unicorn Patch Gown - Pink', 'GRAPHIC DESIGN MEN T SHIRT - BLUE', 'Printed Off Shoulder Top - White', 'Sleeveless Unicorn Print Fit & Flare Net Dress - Multi', 'Frozen Tops For Kids', 'Pure Cotton V-Neck T-Shirt', 'Rust Red Linen Saree', 'Madame Top For Women'}
+INFO     root:step_logger.py:35 Remove current test users from backend

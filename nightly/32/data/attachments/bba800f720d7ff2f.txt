@@ -1,0 +1,15 @@
+INFO     root:step_logger.py:73 Create user: emily73@test.arrnel.gov
+INFO     root:step_logger.py:35 Send request [POST]: /createAccount
+INFO     httpx:_client.py:1025 HTTP Request: POST https://automationexercise.com/api/createAccount "HTTP/1.1 503 Service Unavailable"
+INFO     root:base_api_client.py:133 Request
+
+Method: POST
+Endpoint: https://automationexercise.com/api/createAccount
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'content-length': '330'}
+
+INFO     root:base_api_client.py:144 Response
+
+Status code: 503
+Endpoint: https://automationexercise.com/api/createAccount
+Headers: {'date': 'Mon, 17 Aug 2026 05:27:38 GMT', 'content-type': 'text/html; charset=UTF-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'no-cache, no-store, must-revalidate', 'status': '503 Service Unavailable', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=iRzBfut46I9xVj5lORMm%2B71NVtqyxjztNxKsakwYATC9c3etLHfSrqBUQG3HBBiOYwnBa8p732wMlP%2BCL%2FXsIkuH9o6IKCioDhpDbX6NEOctOZsAP%2F12KyxKFvBBe0zqBoZxxUqll8z%2B"}]}', 'cf-ray': 'a2c6454d7eb0fb48-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+INFO     root:step_logger.py:35 Remove current test users from backend

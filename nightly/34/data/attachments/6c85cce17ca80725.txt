@@ -1,0 +1,81 @@
+INFO:root:Create user: rsmith@test.arrnel.net
+INFO:root:Send request [POST]: /createAccount
+INFO:httpx:HTTP Request: POST https://automationexercise.com/api/createAccount "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: POST
+Endpoint: https://automationexercise.com/api/createAccount
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'content-length': '329'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/createAccount
+Headers: {'date': 'Mon, 31 Aug 2026 11:24:01 GMT', 'content-type': 'text/html; charset=utf-8', 'content-length': '49', 'connection': 'keep-alive', 'vary': 'Accept,Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'POST, OPTIONS', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=2EPpoYSLlIoPJsbEgVQMmD8KNuZg53ed0dhF12jkVGI3jV3aJ19RxhRO5aQwmcLuUpE7BjXKR6svG5Dkximha6afl81CD7VnZkchbKY%2BVxGCUoxZ9Crwgk2stq2dM6DXFSiWJ3Vmaa9c"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'cf-ray': 'a33baa99e8f95050-SEA', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO:root:Send request [GET]: /getUserDetailByEmail
+INFO:httpx:HTTP Request: GET https://automationexercise.com/api/getUserDetailByEmail?email=rsmith%40test.arrnel.net "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: https://automationexercise.com/api/getUserDetailByEmail?email=rsmith%40test.arrnel.net
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/getUserDetailByEmail?email=rsmith%40test.arrnel.net
+Headers: {'date': 'Mon, 31 Aug 2026 11:24:01 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'POST, PUT, OPTIONS, DELETE, GET', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=E10LhJiFdwC9D6m0B2SnY17tZEYzSfgEQRmilALtabv%2BpFJXGLCpf6nGlssbkCXy819VBQA6FGQuQiirdDzsI8dTiYtiUcrdq6p75%2BOMYZoZJLK28blm3YDlNurAYFnmWa87fNRRP7P8"}]}', 'content-encoding': 'gzip', 'cf-ray': 'a33baa9b0a4a5050-SEA', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO:root:Open [Login Page]: /login
+INFO:root:Sign in by email and password
+INFO:root:Navigate to the [Products] page by header
+INFO:root:Click on [Products]
+INFO:root:Add product to cart: GRAPHIC DESIGN MEN T SHIRT - BLUE
+INFO:root:Get test video from Selenoid by video id = [test_place_order_with_login_before_checkout]
+INFO:root:Send request [GET]: /video/test_place_order_with_login_before_checkout.mp4
+INFO:httpx:HTTP Request: GET http://selenoid:4444/video/test_place_order_with_login_before_checkout.mp4 "HTTP/1.1 404 Not Found"
+INFO:root:Request
+
+Method: GET
+Endpoint: http://selenoid:4444/video/test_place_order_with_login_before_checkout.mp4
+Headers: {'host': 'selenoid:4444', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/json', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO:root:Response
+
+Status code: 404
+Endpoint: http://selenoid:4444/video/test_place_order_with_login_before_checkout.mp4
+Headers: {'content-type': 'text/plain; charset=utf-8', 'x-content-type-options': 'nosniff', 'date': 'Mon, 31 Aug 2026 11:24:07 GMT', 'content-length': '19'}
+
+INFO:root:Send request [GET]: /video/test_place_order_with_login_before_checkout.mp4
+INFO:httpx:HTTP Request: GET http://selenoid:4444/video/test_place_order_with_login_before_checkout.mp4 "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: http://selenoid:4444/video/test_place_order_with_login_before_checkout.mp4
+Headers: {'host': 'selenoid:4444', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/json', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: http://selenoid:4444/video/test_place_order_with_login_before_checkout.mp4
+Headers: {'accept-ranges': 'bytes', 'content-length': '295524', 'content-type': 'video/mp4', 'last-modified': 'Mon, 31 Aug 2026 11:24:07 GMT', 'date': 'Mon, 31 Aug 2026 11:24:11 GMT'}
+
+INFO:root:Remove current test users from backend
+INFO:root:Delete user with email: rsmith@test.arrnel.net
+INFO:root:Send request [DELETE]: /deleteAccount
+INFO:httpx:HTTP Request: DELETE https://automationexercise.com/api/deleteAccount "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: DELETE
+Endpoint: https://automationexercise.com/api/deleteAccount
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'content-length': '45'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/deleteAccount
+Headers: {'date': 'Mon, 31 Aug 2026 11:24:11 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Accept,Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'DELETE, OPTIONS', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=NwxeUfe2palq7o6fynIMPrNanQzagYZrDWQxkZ8Uuqur3Y1hEU4by%2BE7nA79iEw%2BBhIggJSTdFpwevLYMeu8M9Yus%2BMsbfKykkVeNupjYOX9C5yoUzZJgFwykZWnpZyWOxTESpngQ0Oq"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'content-encoding': 'gzip', 'cf-ray': 'a33baad919d1ec78-SEA', 'alt-svc': 'h3=":443"; ma=86400'}
+
+WARNING:root:Failed to remove user(s):
+Email = yharrison@test.arrnel.gov, password = [12345], test_data_password = [12345]

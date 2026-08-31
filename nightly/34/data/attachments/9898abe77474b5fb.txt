@@ -1,0 +1,20 @@
+INFO     root:step_logger.py:73 Get all products by group and category
+INFO     root:step_logger.py:35 Send request [GET]: /productsList
+INFO     httpx:_client.py:1025 HTTP Request: GET https://automationexercise.com/api/productsList "HTTP/1.1 200 OK"
+INFO     root:base_api_client.py:133 Request
+
+Method: GET
+Endpoint: https://automationexercise.com/api/productsList
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO     root:base_api_client.py:144 Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/productsList
+Headers: {'date': 'Mon, 31 Aug 2026 11:10:34 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'POST, PUT, OPTIONS, DELETE, GET', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=1H2NSdTkyD5QxWny9nn%2FCUQd1IOzP2NLgfI%2Bk%2BwtagxROMc1vNmIESnv5cgSJ6AOvJYlEyKn0fpsG7%2FazrKYkYThAZllJOA6bALe%2BEfFxFisG2FFvBs8orVEd8u9iUDlTK2oWjQkpReI"}]}', 'content-encoding': 'gzip', 'cf-ray': 'a33b96e96f5a30d7-SEA', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO     root:step_logger.py:73 Open [Main Page]: /
+INFO     root:step_logger.py:73 Filter in Category filter by group = [Men] and category = [Tshirts]
+INFO     root:step_logger.py:35 Expand Category filter group Men
+INFO     root:step_logger.py:35 Check [Features Items] has products: {'Premium Polo T-Shirts', 'Pure Cotton Neon Green Tshirt', 'GRAPHIC DESIGN MEN T SHIRT - BLUE', 'Men Tshirt', 'Pure Cotton V-Neck T-Shirt', 'Green Side Placket Detail T-Shirt'}
+INFO     root:step_logger.py:35 Remove current test users from backend

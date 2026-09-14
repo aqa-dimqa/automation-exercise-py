@@ -1,0 +1,218 @@
+INFO:root:Create user: brian11.9274@test.arrnel.gov
+INFO:root:Send request [POST]: /createAccount
+INFO:httpx:HTTP Request: POST https://automationexercise.com/api/createAccount "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: POST
+Endpoint: https://automationexercise.com/api/createAccount
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'content-length': '339'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/createAccount
+Headers: {'date': 'Mon, 14 Sep 2026 10:23:00 GMT', 'content-type': 'text/html; charset=utf-8', 'content-length': '49', 'connection': 'keep-alive', 'vary': 'Accept,Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'POST, OPTIONS', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ZCsmvuUPC%2Fai%2FRrJpLVSvQET08UMhjOvLzDp3jFe5VTEzKehEV%2FiBhmNMJyCaczNXhIkzPc5mesSRifnCr5vdeOwiCmV6bnN7wU18dYrAEn0qBddS0buAZt9m34g8c9pBUTjwypkSv3K"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'cf-ray': 'a3aeac7c2eb6cf26-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO:root:Send request [GET]: /getUserDetailByEmail
+INFO:httpx:HTTP Request: GET https://automationexercise.com/api/getUserDetailByEmail?email=brian11.9274%40test.arrnel.gov "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: https://automationexercise.com/api/getUserDetailByEmail?email=brian11.9274%40test.arrnel.gov
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/getUserDetailByEmail?email=brian11.9274%40test.arrnel.gov
+Headers: {'date': 'Mon, 14 Sep 2026 10:23:01 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'GET, OPTIONS, POST, PUT, DELETE', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=33USK141lbh2pPPE1No8hDDiuc5zs7oi7Z8c13imTTzSPN69bmYF2ZZIraMdJ5aJwuES7SyVTAC0%2B7H996TFcbExrXf1NKnUusTrOOQVRHcz%2Bf4odG%2BvAl%2B7MyW%2FVuDDHtBc7Dwqnmka"}]}', 'content-encoding': 'gzip', 'cf-ray': 'a3aeac7e9ac5cf26-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO:root:Sign in by email = [brian11.9274@test.arrnel.gov] and password = [12345]
+INFO:root:Send request [GET]: /login
+INFO:httpx:HTTP Request: GET https://automationexercise.com/login "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: https://automationexercise.com/login
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/login
+Headers: {'date': 'Mon, 14 Sep 2026 10:23:01 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'set-cookie': 'csrftoken=YnbmzxnvCyi4x5nhVtWqOoyfxTos8fqiQUFjNJQHxVnHLd7CIPuH4LG4FeyQidaW; expires=Mon, 13 Sep 2027 10:23:01 GMT; Max-Age=31449600; Path=/; SameSite=Lax', 'status': '200 OK', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=JaicBYQVvRq2OAEblsxmMjLlM9CkrETkWqBvvDVD8afBQRKOBmotodZLIaLcgQJC32FuK1gr7OfsSD1GdLhCRGVSKe%2FZiBJXkLcsDevusn6zOPMh5BhqNRgJVU3PSvO9pM%2BJWIcbh%2BOP"}]}', 'content-encoding': 'gzip', 'cf-ray': 'a3aeac813a736d29-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO:root:Send request [POST]: /login
+INFO:httpx:HTTP Request: POST https://automationexercise.com/login "HTTP/1.1 302 Found"
+INFO:httpx:HTTP Request: GET https://automationexercise.com/ "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: https://automationexercise.com/
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'referer': 'https://automationexercise.com/login', 'cookie': 'csrftoken=YnbmzxnvCyi4x5nhVtWqOoyfxTos8fqiQUFjNJQHxVnHLd7CIPuH4LG4FeyQidaW; sessionid=mnxja1vg6g5welr6jt4y2pegam1qc4lk'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/
+Headers: {'date': 'Mon, 14 Sep 2026 10:23:03 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'set-cookie': 'csrftoken=YnbmzxnvCyi4x5nhVtWqOoyfxTos8fqiQUFjNJQHxVnHLd7CIPuH4LG4FeyQidaW; expires=Mon, 13 Sep 2027 10:23:03 GMT; Max-Age=31449600; Path=/; SameSite=Lax', 'status': '200 OK', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=W0DK7PA%2BRrQAu3iqM9C32XoyCg%2BZbQSnH%2Fp2ed7tWVVO9OcNjvwMBN52fe4DJQMpQ2APu4VMcMm%2Bjlbn6dPbctHXZWQrqiTrTf0hUqsdcE%2FC%2Fc6IrLpjIMVsNequJ6iJAE9UuMkmJadO"}]}', 'content-encoding': 'gzip', 'cf-ray': 'a3aeac8b1d2b6d29-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO:root:Open [Cart Page]: /view_cart
+INFO:root:Add products to cart
+INFO:root:Add [3] product(s) by id = [15] to cart
+INFO:root:Send request [GET]: /add_to_cart/15
+INFO:httpx:HTTP Request: GET https://automationexercise.com/add_to_cart/15?quantity=3 "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: https://automationexercise.com/add_to_cart/15?quantity=3
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'cookie': 'csrftoken=YnbmzxnvCyi4x5nhVtWqOoyfxTos8fqiQUFjNJQHxVnHLd7CIPuH4LG4FeyQidaW; sessionid=mnxja1vg6g5welr6jt4y2pegam1qc4lk'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/add_to_cart/15?quantity=3
+Headers: {'date': 'Mon, 14 Sep 2026 10:23:05 GMT', 'content-type': 'text/html; charset=utf-8', 'content-length': '13', 'connection': 'keep-alive', 'vary': 'Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=HBicDFBqOfD%2Bth5WAWdw8JmqVBj%2BitFQXrpqpEmBO4bi4aogG0Yo1EhLx0bVuwpPAuUWkQbJO3co7D%2F9wWw5Zu%2B9A8lB9%2BwzJ2zMR2u93BLhiBoPTFD2ElBo9f5ogfG%2BxGyTaofEs8g%2B"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'cf-ray': 'a3aeac960d791f07-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO:root:Add [2] product(s) by id = [4] to cart
+INFO:root:Send request [GET]: /add_to_cart/4
+INFO:httpx:HTTP Request: GET https://automationexercise.com/add_to_cart/4?quantity=2 "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: https://automationexercise.com/add_to_cart/4?quantity=2
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'cookie': 'csrftoken=YnbmzxnvCyi4x5nhVtWqOoyfxTos8fqiQUFjNJQHxVnHLd7CIPuH4LG4FeyQidaW; sessionid=mnxja1vg6g5welr6jt4y2pegam1qc4lk'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/add_to_cart/4?quantity=2
+Headers: {'date': 'Mon, 14 Sep 2026 10:23:05 GMT', 'content-type': 'text/html; charset=utf-8', 'content-length': '13', 'connection': 'keep-alive', 'vary': 'Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=C9TGSgMPMZnYthiE%2FUfGwGsxc91sxmr9DDI%2BIykFVFEYAk%2BOBY1dn%2BMnHeVzymyNpn8jMC6jKYOSywtQAZFPU6vU85DcqO9Th1Ibm1gzJcnsEPEhR8b3IKCTPQQL64cJ%2FjqbqA4bioCn"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'cf-ray': 'a3aeac9849f41f07-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO:root:Add [7] product(s) by id = [19] to cart
+INFO:root:Send request [GET]: /add_to_cart/19
+INFO:httpx:HTTP Request: GET https://automationexercise.com/add_to_cart/19?quantity=7 "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: https://automationexercise.com/add_to_cart/19?quantity=7
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'cookie': 'csrftoken=YnbmzxnvCyi4x5nhVtWqOoyfxTos8fqiQUFjNJQHxVnHLd7CIPuH4LG4FeyQidaW; sessionid=mnxja1vg6g5welr6jt4y2pegam1qc4lk'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/add_to_cart/19?quantity=7
+Headers: {'date': 'Mon, 14 Sep 2026 10:23:05 GMT', 'content-type': 'text/html; charset=utf-8', 'content-length': '13', 'connection': 'keep-alive', 'vary': 'Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=MXncilsD0mga4HUWmqO1QWyofmiP7Xn5Izjo3uhXXgh60q70GXrZSIFeoQa2ywRx0BCcwUehIc458l6IkkntL2Lcz99Df0TTtoT5y3ACu9hi1IDzt8m4QHACZ23EANOPNa%2FG%2ByJHHJ1V"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'cf-ray': 'a3aeac995c271f07-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO:root:Add [9] product(s) by id = [14] to cart
+INFO:root:Send request [GET]: /add_to_cart/14
+INFO:httpx:HTTP Request: GET https://automationexercise.com/add_to_cart/14?quantity=9 "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: https://automationexercise.com/add_to_cart/14?quantity=9
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'cookie': 'csrftoken=YnbmzxnvCyi4x5nhVtWqOoyfxTos8fqiQUFjNJQHxVnHLd7CIPuH4LG4FeyQidaW; sessionid=mnxja1vg6g5welr6jt4y2pegam1qc4lk'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/add_to_cart/14?quantity=9
+Headers: {'date': 'Mon, 14 Sep 2026 10:23:05 GMT', 'content-type': 'text/html; charset=utf-8', 'content-length': '13', 'connection': 'keep-alive', 'vary': 'Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ptj2xfhHaNVDBwDzZG%2F82rHyDJvI7ccIfDGAHSX6p%2Bx%2FjIfWXS5likomxTNGcqUy1FqIYk%2FDanETGwRoV%2BvHJHit%2FFH18%2B6WiXMX6InMKu6IM65tww5E9kY1k51FDiQ9qhL2QLRsOj%2BQ"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'cf-ray': 'a3aeac99fd3f1f07-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO:root:Add [7] product(s) by id = [18] to cart
+INFO:root:Send request [GET]: /add_to_cart/18
+INFO:httpx:HTTP Request: GET https://automationexercise.com/add_to_cart/18?quantity=7 "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: https://automationexercise.com/add_to_cart/18?quantity=7
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'cookie': 'csrftoken=YnbmzxnvCyi4x5nhVtWqOoyfxTos8fqiQUFjNJQHxVnHLd7CIPuH4LG4FeyQidaW; sessionid=mnxja1vg6g5welr6jt4y2pegam1qc4lk'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/add_to_cart/18?quantity=7
+Headers: {'date': 'Mon, 14 Sep 2026 10:23:05 GMT', 'content-type': 'text/html; charset=utf-8', 'content-length': '13', 'connection': 'keep-alive', 'vary': 'Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=D49G12LlW1axId4HnrZo9TLAQO54D4NExH%2FRoksE3GmNJBPSho%2BkEDHkONSpCpwVY4TeMh6aYKi9KFoDSKr7IK9DWIK%2BgV26LBx1TmvX69%2BcF6fN5IB3m75cLoOQzKrw0y%2BDF%2Fx03gNG"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'cf-ray': 'a3aeac9a8e261f07-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO:root:Add [3] product(s) by id = [16] to cart
+INFO:root:Send request [GET]: /add_to_cart/16
+INFO:httpx:HTTP Request: GET https://automationexercise.com/add_to_cart/16?quantity=3 "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: https://automationexercise.com/add_to_cart/16?quantity=3
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'cookie': 'csrftoken=YnbmzxnvCyi4x5nhVtWqOoyfxTos8fqiQUFjNJQHxVnHLd7CIPuH4LG4FeyQidaW; sessionid=mnxja1vg6g5welr6jt4y2pegam1qc4lk'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/add_to_cart/16?quantity=3
+Headers: {'date': 'Mon, 14 Sep 2026 10:23:05 GMT', 'content-type': 'text/html; charset=utf-8', 'content-length': '13', 'connection': 'keep-alive', 'vary': 'Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=rda0dSFRy0vR3eMrPzRFgLnMXlNa8gqOX%2FhiIxurIBQfoTkvN1XSjoVZl1jLkhK3UGKj1BZ64%2F8INjpx0NOcc1vFx3CV2NMEkyyMFPM85nsjHhNTO2yZO3IhvU%2B%2FVQZUva%2F3j6NE2qO%2F"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'cf-ray': 'a3aeac9afeb81f07-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO:root:Add [6] product(s) by id = [29] to cart
+INFO:root:Send request [GET]: /add_to_cart/29
+INFO:httpx:HTTP Request: GET https://automationexercise.com/add_to_cart/29?quantity=6 "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: https://automationexercise.com/add_to_cart/29?quantity=6
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'cookie': 'csrftoken=YnbmzxnvCyi4x5nhVtWqOoyfxTos8fqiQUFjNJQHxVnHLd7CIPuH4LG4FeyQidaW; sessionid=mnxja1vg6g5welr6jt4y2pegam1qc4lk'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/add_to_cart/29?quantity=6
+Headers: {'date': 'Mon, 14 Sep 2026 10:23:05 GMT', 'content-type': 'text/html; charset=utf-8', 'content-length': '13', 'connection': 'keep-alive', 'vary': 'Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=VgJ0JdvyeocqiZH%2Ff0EKr8L1ttWADU%2B%2BGHZGnbsWbvKMoJJggvc5TRIke5LTriNY0hVEFdYxYBGgYUBAAj1j6ITBh8%2Byf3aymZtwoaZvJ%2Fk7ufSDkPmi9DMF6nvmg4VkktRulRe54T6V"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'cf-ray': 'a3aeac9b7fbd1f07-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO:root:Add [2] product(s) by id = [39] to cart
+INFO:root:Send request [GET]: /add_to_cart/39
+INFO:httpx:HTTP Request: GET https://automationexercise.com/add_to_cart/39?quantity=2 "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: https://automationexercise.com/add_to_cart/39?quantity=2
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'cookie': 'csrftoken=YnbmzxnvCyi4x5nhVtWqOoyfxTos8fqiQUFjNJQHxVnHLd7CIPuH4LG4FeyQidaW; sessionid=mnxja1vg6g5welr6jt4y2pegam1qc4lk'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/add_to_cart/39?quantity=2
+Headers: {'date': 'Mon, 14 Sep 2026 10:23:05 GMT', 'content-type': 'text/html; charset=utf-8', 'content-length': '13', 'connection': 'keep-alive', 'vary': 'Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=zCBOZT%2F9rQI%2B0D1tcBbBz1HC%2FiUauk%2BplwHdUo61wkfL1MMZwx9MYeMN%2BOsIoifnOmtuoYMCAos%2FxZQOi51REU7hQtgiR6YPD5gFYEAN2fHGWBeS0UJfHDHP37KcHfC5MjevSLTXf1Hv"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'cf-ray': 'a3aeac9be8851f07-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO:root:Add [4] product(s) by id = [1] to cart
+INFO:root:Send request [GET]: /add_to_cart/1
+INFO:httpx:HTTP Request: GET https://automationexercise.com/add_to_cart/1?quantity=4 "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: GET
+Endpoint: https://automationexercise.com/add_to_cart/1?quantity=4
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'cookie': 'csrftoken=YnbmzxnvCyi4x5nhVtWqOoyfxTos8fqiQUFjNJQHxVnHLd7CIPuH4LG4FeyQidaW; sessionid=mnxja1vg6g5welr6jt4y2pegam1qc4lk'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/add_to_cart/1?quantity=4
+Headers: {'date': 'Mon, 14 Sep 2026 10:23:05 GMT', 'content-type': 'text/html; charset=utf-8', 'content-length': '13', 'connection': 'keep-alive', 'vary': 'Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=0I8uR06YiAj9DWWCWhT8tXGXJ3NvtbwzdpwT8dxLNdBpEFg0Q5q8U0mmiPjSQsqq%2F7he6%2FI8ziKri106rUrffsHRTIJl9tWltENnSC%2BTZk2mik3g0HwIFdyj%2BnezecOSNHSyrQ39%2BBHb"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'cf-ray': 'a3aeac9c699d1f07-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO:root:Remove [Product item 'Blue Top']
+INFO:root:Proceed to Checkout
+INFO:root:Check all products total price
+INFO:root:Check [Total Price has text: Rs. 39240]
+INFO:root:Remove current test users from backend
+INFO:root:Delete user with email: brian11.9274@test.arrnel.gov
+INFO:root:Send request [DELETE]: /deleteAccount
+INFO:httpx:HTTP Request: DELETE https://automationexercise.com/api/deleteAccount "HTTP/1.1 200 OK"
+INFO:root:Request
+
+Method: DELETE
+Endpoint: https://automationexercise.com/api/deleteAccount
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'cookie': 'csrftoken=YnbmzxnvCyi4x5nhVtWqOoyfxTos8fqiQUFjNJQHxVnHLd7CIPuH4LG4FeyQidaW; sessionid=mnxja1vg6g5welr6jt4y2pegam1qc4lk', 'content-length': '51'}
+
+INFO:root:Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/deleteAccount
+Headers: {'date': 'Mon, 14 Sep 2026 10:23:08 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Accept,Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'DELETE, OPTIONS', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=2RPfUYMcV4vsnacFwfPc7TtofGy6v75v%2FmdKMns3Hp6LhPefB3cyVkVG3RnpZ2adbkS%2BlXIXI4P4cnamIiZx6lRlIJGeWHerruO4WoeJX55fsjSd8kVoaJDjoDvGN9q9OWcOvfqJ7YxV"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'content-encoding': 'gzip', 'cf-ray': 'a3aeaca7a89267f1-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+WARNING:root:Failed to remove user(s):
+Email = usoto@test.arrnel.org, password = [12345], test_data_password = [12345]

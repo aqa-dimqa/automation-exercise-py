@@ -1,0 +1,143 @@
+INFO     root:step_logger.py:73 Open [Cart Page]: /view_cart
+INFO     root:step_logger.py:73 Create user: lopezmark@test.arrnel.org
+INFO     root:step_logger.py:35 Send request [POST]: /createAccount
+INFO     httpx:_client.py:1025 HTTP Request: POST https://automationexercise.com/api/createAccount "HTTP/1.1 200 OK"
+INFO     root:base_api_client.py:133 Request
+
+Method: POST
+Endpoint: https://automationexercise.com/api/createAccount
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'content-length': '331'}
+
+INFO     root:base_api_client.py:144 Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/createAccount
+Headers: {'date': 'Mon, 14 Sep 2026 10:21:29 GMT', 'content-type': 'text/html; charset=utf-8', 'content-length': '49', 'connection': 'keep-alive', 'vary': 'Accept,Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'OPTIONS, POST', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=mDlJDoNigxtcSHazFuNf%2FcQSHdgWsBu9huoF983QV5XGLdpLNNxWYG8NdsQudAuDgHNqAzARy00y3R5k%2BUPIOfOkITGbPlKQvwrGmz8qIqqBzPiy0KOyG94dzI71FPFYg88sxD11xJA3"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'cf-ray': 'a3aeaa453bc32953-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO     root:step_logger.py:35 Send request [GET]: /getUserDetailByEmail
+INFO     httpx:_client.py:1025 HTTP Request: GET https://automationexercise.com/api/getUserDetailByEmail?email=lopezmark%40test.arrnel.org "HTTP/1.1 200 OK"
+INFO     root:base_api_client.py:133 Request
+
+Method: GET
+Endpoint: https://automationexercise.com/api/getUserDetailByEmail?email=lopezmark%40test.arrnel.org
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO     root:base_api_client.py:144 Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/getUserDetailByEmail?email=lopezmark%40test.arrnel.org
+Headers: {'date': 'Mon, 14 Sep 2026 10:21:30 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Accept,Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'GET, DELETE, PUT, POST, OPTIONS', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=M7s7Gafe%2FAaDb6u0lr1BBlQwgp7p1F8X9JO4LOdCgR6NYXS71sDzHlcghIGRGJCtKRpZdBMFxti5lWc%2B7SUXICzzbDk%2BNsFUSLsIfCcKyepT6FARWkkG%2FqnfEH3FG5P43AlaFrjD1NA7"}]}', 'content-encoding': 'gzip', 'cf-ray': 'a3aeaa467c982953-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO     root:step_logger.py:73 Sign in by email = [lopezmark@test.arrnel.org] and password = [12345]
+INFO     root:step_logger.py:35 Send request [GET]: /login
+INFO     httpx:_client.py:1025 HTTP Request: GET https://automationexercise.com/login "HTTP/1.1 200 OK"
+INFO     root:base_api_client.py:133 Request
+
+Method: GET
+Endpoint: https://automationexercise.com/login
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO     root:base_api_client.py:144 Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/login
+Headers: {'date': 'Mon, 14 Sep 2026 10:21:30 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'set-cookie': 'csrftoken=OL0SLX9RELSjO7czzjospjlwOmvb9SszNjblZO2s1z0KooNz13j42YjZcJ1aBvds; expires=Mon, 13 Sep 2027 10:21:30 GMT; Max-Age=31449600; Path=/; SameSite=Lax', 'status': '200 OK', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=6K1o8f7g%2BpV%2BODoF%2FgFoXmHKsW4bOsHyNWFSl%2FAv4RTnOtXzxN8sZS%2Fx17sQIMYox8IHjc1AiwDxtHklzEEWh1aaO8fdKGqgTTz2eKc03q%2FOkY7ja0HUrVZy%2FtIfFAjzX%2BxC9ACqZrbc"}]}', 'content-encoding': 'gzip', 'cf-ray': 'a3aeaa49090a1990-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO     root:step_logger.py:35 Send request [POST]: /login
+INFO     httpx:_client.py:1025 HTTP Request: POST https://automationexercise.com/login "HTTP/1.1 302 Found"
+INFO     httpx:_client.py:1025 HTTP Request: GET https://automationexercise.com/ "HTTP/1.1 200 OK"
+INFO     root:base_api_client.py:133 Request
+
+Method: GET
+Endpoint: https://automationexercise.com/
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'referer': 'https://automationexercise.com/login', 'cookie': 'csrftoken=OL0SLX9RELSjO7czzjospjlwOmvb9SszNjblZO2s1z0KooNz13j42YjZcJ1aBvds; sessionid=1ytflsml0ezp0sgu4mbdyy9ske03gawl'}
+
+INFO     root:base_api_client.py:144 Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/
+Headers: {'date': 'Mon, 14 Sep 2026 10:21:32 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'set-cookie': 'csrftoken=OL0SLX9RELSjO7czzjospjlwOmvb9SszNjblZO2s1z0KooNz13j42YjZcJ1aBvds; expires=Mon, 13 Sep 2027 10:21:32 GMT; Max-Age=31449600; Path=/; SameSite=Lax', 'status': '200 OK', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=K7XEM68OJevxrjR35IAeq3SOwcHvOpE8XqzaQkltmzNUoJ1hxcfV22q%2BHaCQr87RB7yTQejz6rYmny6Y7fiAaqkiM9f%2B8MzUMC03UkmW0htv%2F%2FZDsXbDXCYiOtjYYBDTDyD5YATrCr1c"}]}', 'content-encoding': 'gzip', 'cf-ray': 'a3aeaa541ce51990-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO     root:step_logger.py:73 Add products to cart
+INFO     root:step_logger.py:73 Add [10] product(s) by id = [24] to cart
+INFO     root:step_logger.py:35 Send request [GET]: /add_to_cart/24
+INFO     httpx:_client.py:1025 HTTP Request: GET https://automationexercise.com/add_to_cart/24?quantity=10 "HTTP/1.1 200 OK"
+INFO     root:base_api_client.py:133 Request
+
+Method: GET
+Endpoint: https://automationexercise.com/add_to_cart/24?quantity=10
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'cookie': 'csrftoken=OL0SLX9RELSjO7czzjospjlwOmvb9SszNjblZO2s1z0KooNz13j42YjZcJ1aBvds; sessionid=1ytflsml0ezp0sgu4mbdyy9ske03gawl'}
+
+INFO     root:base_api_client.py:144 Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/add_to_cart/24?quantity=10
+Headers: {'date': 'Mon, 14 Sep 2026 10:21:32 GMT', 'content-type': 'text/html; charset=utf-8', 'content-length': '13', 'connection': 'keep-alive', 'vary': 'Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=BrReE4MPuPX%2Bd7i4S3igLuV3ByVaCawv5sa2%2FQWyBZBBvwsV1QOcNHG2HaDtiZLH4A6CUPh0EuHLvKgXsCI5fSAOduwBuKSnOzQCe%2FsFGYuiePfOuEEtT05UxdH0Xl2AiHrFYwmz1Wmm"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'cf-ray': 'a3aeaa5779282574-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO     root:step_logger.py:73 Add [2] product(s) by id = [23] to cart
+INFO     root:step_logger.py:35 Send request [GET]: /add_to_cart/23
+INFO     httpx:_client.py:1025 HTTP Request: GET https://automationexercise.com/add_to_cart/23?quantity=2 "HTTP/1.1 200 OK"
+INFO     root:base_api_client.py:133 Request
+
+Method: GET
+Endpoint: https://automationexercise.com/add_to_cart/23?quantity=2
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'cookie': 'csrftoken=OL0SLX9RELSjO7czzjospjlwOmvb9SszNjblZO2s1z0KooNz13j42YjZcJ1aBvds; sessionid=1ytflsml0ezp0sgu4mbdyy9ske03gawl'}
+
+INFO     root:base_api_client.py:144 Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/add_to_cart/23?quantity=2
+Headers: {'date': 'Mon, 14 Sep 2026 10:21:33 GMT', 'content-type': 'text/html; charset=utf-8', 'content-length': '13', 'connection': 'keep-alive', 'vary': 'Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=XIp46uTlpszbhxbfKLt2oe2k1pbUnUqzXw8sER0Gy5GwtZ%2FrhEnayD%2FT2t3IYng4s%2BDOS%2FqJBdpaeh6KpRhSHZKU7qVU7CTq2U8qvrZeBABoYKTVFcGfjokvdormZ471ZmXQikZArL4V"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'cf-ray': 'a3aeaa590a6a2574-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO     root:step_logger.py:73 Add [5] product(s) by id = [40] to cart
+INFO     root:step_logger.py:35 Send request [GET]: /add_to_cart/40
+INFO     httpx:_client.py:1025 HTTP Request: GET https://automationexercise.com/add_to_cart/40?quantity=5 "HTTP/1.1 200 OK"
+INFO     root:base_api_client.py:133 Request
+
+Method: GET
+Endpoint: https://automationexercise.com/add_to_cart/40?quantity=5
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'cookie': 'csrftoken=OL0SLX9RELSjO7czzjospjlwOmvb9SszNjblZO2s1z0KooNz13j42YjZcJ1aBvds; sessionid=1ytflsml0ezp0sgu4mbdyy9ske03gawl'}
+
+INFO     root:base_api_client.py:144 Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/add_to_cart/40?quantity=5
+Headers: {'date': 'Mon, 14 Sep 2026 10:21:33 GMT', 'content-type': 'text/html; charset=utf-8', 'content-length': '13', 'connection': 'keep-alive', 'vary': 'Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=eIdiP9NbktYzwnQvEyGS0Ija6jFdmbL1zYqqvabQvCHXGrq1Epqx5SvMA%2F1cG%2FVg31FoLu69U5hr6OaAwJZDRL0Gt4msZzukNr4DPzD9lYExfv1SiwGAd83Hu3EfaYmgCs7J1qprUZsH"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'cf-ray': 'a3aeaa59ab0c2574-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO     root:step_logger.py:73 Add [8] product(s) by id = [29] to cart
+INFO     root:step_logger.py:35 Send request [GET]: /add_to_cart/29
+INFO     httpx:_client.py:1025 HTTP Request: GET https://automationexercise.com/add_to_cart/29?quantity=8 "HTTP/1.1 200 OK"
+INFO     root:base_api_client.py:133 Request
+
+Method: GET
+Endpoint: https://automationexercise.com/add_to_cart/29?quantity=8
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'cookie': 'csrftoken=OL0SLX9RELSjO7czzjospjlwOmvb9SszNjblZO2s1z0KooNz13j42YjZcJ1aBvds; sessionid=1ytflsml0ezp0sgu4mbdyy9ske03gawl'}
+
+INFO     root:base_api_client.py:144 Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/add_to_cart/29?quantity=8
+Headers: {'date': 'Mon, 14 Sep 2026 10:21:33 GMT', 'content-type': 'text/html; charset=utf-8', 'content-length': '13', 'connection': 'keep-alive', 'vary': 'Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=MaOam3H4xloUZuTru9BAqV2T5vJgdSSvjlJxJoPNXqTa6VZ9q58iO%2FIU0DrrwO1mhg6tPRRahXpvNMyZANB5QjLyH5XmH4U0Z4ohsK90ZXr9GiywCovmEzvHD%2FLFsU7p3x5faiQ6doCw"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'cf-ray': 'a3aeaa5aec112574-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+INFO     root:step_logger.py:73 Click on [Product Title]
+INFO     root:step_logger.py:73 Add 9 [Product Details] product(s) to cart
+INFO     root:step_logger.py:73 Navigate to the [Cart] page by header
+INFO     root:step_logger.py:73 Click on [Cart]
+INFO     root:step_logger.py:73 Check [Cart products] contains product items with expected data
+INFO     root:step_logger.py:35 Remove current test users from backend
+INFO     root:step_logger.py:73 Delete user with email: lopezmark@test.arrnel.org
+INFO     root:step_logger.py:35 Send request [DELETE]: /deleteAccount
+INFO     httpx:_client.py:1025 HTTP Request: DELETE https://automationexercise.com/api/deleteAccount "HTTP/1.1 200 OK"
+INFO     root:base_api_client.py:133 Request
+
+Method: DELETE
+Endpoint: https://automationexercise.com/api/deleteAccount
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'cookie': 'csrftoken=OL0SLX9RELSjO7czzjospjlwOmvb9SszNjblZO2s1z0KooNz13j42YjZcJ1aBvds; sessionid=1ytflsml0ezp0sgu4mbdyy9ske03gawl', 'content-length': '48'}
+
+INFO     root:base_api_client.py:144 Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/api/deleteAccount
+Headers: {'date': 'Mon, 14 Sep 2026 10:21:35 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Accept,Cookie', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'allow': 'OPTIONS, DELETE', 'x-powered-by': 'Phusion Passenger(R) 6.1.8', 'status': '200 OK', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=xZzMu5cDsyKpu%2BKA32kyDRNI%2BCc1tjOo55bmBrVT7oyYbPkxjcjnM%2FTF0iQUO%2BwENiAI4eKkYe0cUIrXzP3Sqjxa1LNwP1BZ5UP%2BKIwRDMYXxKq71sTbgqv2EAhnpUQO0IodlEZ7IBu%2B"}]}', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'content-encoding': 'gzip', 'cf-ray': 'a3aeaa66baf50a83-SJC', 'alt-svc': 'h3=":443"; ma=86400'}
+
+WARNING  root:user_store.py:112 Failed to remove user(s):
+Email = usoto@test.arrnel.org, password = [12345], test_data_password = [12345]

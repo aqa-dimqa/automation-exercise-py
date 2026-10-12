@@ -1,0 +1,29 @@
+INFO     root:step_logger.py:35 Send request [GET]: /login
+INFO     httpx:_client.py:1025 HTTP Request: GET https://automationexercise.com/login "HTTP/1.1 200 OK"
+INFO     root:base_api_client.py:133 Request
+
+Method: GET
+Endpoint: https://automationexercise.com/login
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+
+INFO     root:base_api_client.py:144 Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/login
+Headers: {'date': 'Mon, 12 Oct 2026 12:21:16 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.2.0', 'set-cookie': 'csrftoken=8sF2OqTHrCxBdyg0LQEZ9Wq2NREAFyO0QlbdUlYY8kFcdV55BVeROwkAYiTtw2Ti; expires=Mon, 11 Oct 2027 12:21:16 GMT; Max-Age=31449600; Path=/; SameSite=Lax', 'status': '200 OK', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=CeblWNc5kglNwH7uWdQyq7G3pvw3Q7McMZ5O9OtHEYgAq4PoMESsdRmFutkq5KOeGAIDzcddnKOb2FTPsGQ4FY4YhNoBkJUY8b0NFfLY5UqdLaxwMMkHfrduo5fW%2Be7gQEQiilTn4rlA"}]}', 'content-encoding': 'gzip', 'cf-ray': 'a496103af955ff01-PDX', 'alt-svc': 'h3=":443"; ma=86400'}
+
+INFO     root:step_logger.py:35 Send request [POST]: /login
+INFO     httpx:_client.py:1025 HTTP Request: POST https://automationexercise.com/login "HTTP/1.1 302 Found"
+INFO     httpx:_client.py:1025 HTTP Request: GET https://automationexercise.com/ "HTTP/1.1 200 OK"
+INFO     root:base_api_client.py:133 Request
+
+Method: GET
+Endpoint: https://automationexercise.com/
+Headers: {'host': 'automationexercise.com', 'accept': '*/*', 'accept-encoding': 'gzip, deflate', 'connection': 'keep-alive', 'content-type': 'application/x-www-form-urlencoded', 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'referer': 'https://automationexercise.com/login', 'cookie': 'csrftoken=8sF2OqTHrCxBdyg0LQEZ9Wq2NREAFyO0QlbdUlYY8kFcdV55BVeROwkAYiTtw2Ti; sessionid=81lxbp6ahcag184w9jzvx37ev1903opc'}
+
+INFO     root:base_api_client.py:144 Response
+
+Status code: 200
+Endpoint: https://automationexercise.com/
+Headers: {'date': 'Mon, 12 Oct 2026 12:21:17 GMT', 'content-type': 'text/html; charset=utf-8', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'vary': 'Cookie,Accept-Encoding', 'referrer-policy': 'same-origin', 'x-frame-options': 'DENY', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Phusion Passenger(R) 6.2.0', 'set-cookie': 'csrftoken=8sF2OqTHrCxBdyg0LQEZ9Wq2NREAFyO0QlbdUlYY8kFcdV55BVeROwkAYiTtw2Ti; expires=Mon, 11 Oct 2027 12:21:17 GMT; Max-Age=31449600; Path=/; SameSite=Lax', 'status': '200 OK', 'nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'report-to': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=p2Vp6OX1JK03%2BaCjtJTuk8nxoLvvNFfTDgxBCyZiIn9M0pXy4dnhNS4kYWr%2FdlvkNg%2FAXrbvmoWszF3a3vEc5YuvKR85ihJ3YbfwGkoC8QGoYGnU0I2KyKXzWosDcbe2qByFrWfgCzzJ"}]}', 'content-encoding': 'gzip', 'cf-ray': 'a4961040ffbcff01-PDX', 'alt-svc': 'h3=":443"; ma=86400'}
+INFO     root:step_logger.py:35 Remove current test users from backend
